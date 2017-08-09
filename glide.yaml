@@ -1,0 +1,5 @@
+package: github.com/tdsh/humanize
+import:
+- package: github.com/nicksnyder/go-i18n
+  subpackage:
+  - i18n

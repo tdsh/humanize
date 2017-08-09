@@ -1,0 +1,24 @@
+language: go
+
+os:
+  - linux
+  - osx
+
+go:
+  - 1.x
+  - master
+
+go_import_path: github.com/tdsh/humanize
+
+sudo: false
+
+cache:
+  directories:
+    - vendor
+
+install:
+  - make deps
+
+script:
+  - make lint
+  - make test

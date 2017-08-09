@@ -1,0 +1,102 @@
+{
+  "scale_thousand": {
+    "other": "{{.Count}} mil"
+  },
+  "scale_million": {
+    "other": "{{.Count}} millón"
+  },
+  "scale_billion": {
+    "other": "{{.Count}} mil millones"
+  },
+  "scale_trillion": {
+    "other": "{{.Count}} trillones"
+  },
+  "scale_quadrillion": {
+    "other": "{{.Count}} cuatrillón"
+  },
+  "scale_quintillion": {
+    "other": "{{.Count}} trillón"
+  },
+  "number_one": {
+    "other": "uno"
+  },
+  "number_two": {
+    "other": "dos"
+  },
+  "number_three": {
+    "other": "tres"
+  },
+  "number_four": {
+    "other": "cuatro"
+  },
+  "number_five": {
+    "other": "cinco"
+  },
+  "number_six": {
+    "other": "seis"
+  },
+  "number_seven": {
+    "other": "siete"
+  },
+  "number_eight": {
+    "other": "ocho"
+  },
+  "number_nine": {
+    "other": "nueve"
+  },
+  "suffix_before": {
+    "other": "hace {{.Count}}"
+  },
+  "suffix_after": {
+    "other": "{{.Count}} más tarde"
+  },
+  "delta_zero_sec": {
+    "other": "un momento"
+  },
+  "delta_one_day": {
+    "other": "un día"
+  },
+  "delta_one_month": {
+    "other": "un mes"
+  },
+  "delta_one_year": {
+    "other": "un año"
+  },
+  "scale_second": {
+    "one": "un segundo",
+    "other": "{{.Count}} segundos"
+  },
+  "scale_minute": {
+    "one": "un minuto",
+    "other": "{{.Count}} minutos"
+  },
+  "scale_hour": {
+    "one": "una hora",
+    "other": "{{.Count}} horas"
+  },
+  "scale_day": {
+    "one": "{{.Count}} día",
+    "other": "{{.Count}} días"
+  },
+  "scale_month": {
+    "one": "{{.Count}} mes",
+    "other": "{{.Count}} meses"
+  },
+  "scale_year": {
+    "one": "{{.Count}} año",
+    "other": "{{.Count}} años"
+  },
+  "scale_decade": {
+    "one": "una década",
+    "other": "{{.Count}} décadas"
+  },
+  "day_today": {
+    "other": "hoy"
+  },
+  "day_yesterday": {
+    "other": "ayer"
+  },
+  "day_tomorrow": {
+    "other": "mañana"
+  }
+}

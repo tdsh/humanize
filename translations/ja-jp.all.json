@@ -1,0 +1,102 @@
+{
+  "scale_thousand": {
+    "other": "{{.Count}} 千"
+  },
+  "scale_million": {
+    "other": "{{.Count}} 百万"
+  },
+  "scale_billion": {
+    "other": "{{.Count}} 十億"
+  },
+  "scale_trillion": {
+    "other": "{{.Count}} 一兆"
+  },
+  "scale_quadrillion": {
+    "other": "{{.Count}} 千兆"
+  },
+  "scale_quintillion": {
+    "other": "{{.Count}} 百京"
+  },
+  "number_one": {
+    "other": "一"
+  },
+  "number_two": {
+    "other": "二"
+  },
+  "number_three": {
+    "other": "三"
+  },
+  "number_four": {
+    "other": "四"
+  },
+  "number_five": {
+    "other": "五"
+  },
+  "number_six": {
+    "other": "六"
+  },
+  "number_seven": {
+    "other": "七"
+  },
+  "number_eight": {
+    "other": "八"
+  },
+  "number_nine": {
+    "other": "九"
+  },
+  "suffix_before": {
+    "other": "{{.Count}}前"
+  },
+  "suffix_after": {
+    "other": "{{.Count}}後"
+  },
+  "delta_zero_sec": {
+    "other": "一瞬"
+  },
+  "delta_one_day": {
+    "other": "1秒"
+  },
+  "delta_one_month": {
+    "other": "1月"
+  },
+  "delta_one_year": {
+    "other": "1年"
+  },
+  "scale_second": {
+    "one": "1秒",
+    "other": "{{.Count}}秒"
+  },
+  "scale_minute": {
+    "one": "1分",
+    "other": "{{.Count}}分"
+  },
+  "scale_hour": {
+    "one": "1時間",
+    "other": "{{.Count}}時間"
+  },
+  "scale_day": {
+    "one": "{{.Count}}日",
+    "other": "{{.Count}}日"
+  },
+  "scale_month": {
+    "one": "{{.Count}}月",
+    "other": "{{.Count}}月"
+  },
+  "scale_year": {
+    "one": "{{.Count}}年",
+    "other": "{{.Count}}年"
+  },
+  "scale_decade": {
+    "one": "10年",
+    "other": "{{.Count}}0年"
+  },
+  "day_today": {
+    "other": "今日"
+  },
+  "day_yesterday": {
+    "other": "昨日"
+  },
+  "day_tomorrow": {
+    "other": "明日"
+  }
+}
