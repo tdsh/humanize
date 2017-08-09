@@ -4,22 +4,36 @@ import (
 	"testing"
 )
 
+var naturalSizeTests = []struct {
+	in     int
+	gnu    bool
+	binary bool
+	out    string
+}{
+	{123, false, false, "123 Bytes"},
+	{1978, true, false, "2K"},
+	{1000000000, false, true, "953.7 MiB"},
+	{742617000027, true, true, "742.6G"},
+}
+
 func TestNaturalSize(t *testing.T) {
 	var got string
-	got = NaturalSize(123)
-	if got != "123 Bytes" {
-		t.Fatalf("want %q but %q", "123 Bytes", got)
-	}
-	got = NaturalSize(1978, GNU(true))
-	if got != "2K" {
-		t.Fatalf("want %q but %q", "2K", got)
-	}
-	got = NaturalSize(1000000000, Binary(true))
-	if got != "953.7 MiB" {
-		t.Fatalf("want %q but %q", "953.7 MiB", got)
-	}
-	got = NaturalSize(742617000027, GNU(true), Binary(true))
-	if got != "742.6G" {
-		t.Fatalf("want %q but %q", "742.6G", got)
+	for _, tt := range naturalSizeTests {
+		if tt.gnu == true {
+			if tt.binary == true {
+				got = NaturalSize(tt.in, GNU(true), Binary(true))
+			} else {
+				got = NaturalSize(tt.in, GNU(true))
+			}
+		} else {
+			if tt.binary == true {
+				got = NaturalSize(tt.in, Binary(true))
+			} else {
+				got = NaturalSize(tt.in)
+			}
+		}
+		if got != tt.out {
+			t.Errorf("NaturalSize(%d, GNU(%v), Binary(%v)) = %q want %q", tt.in, tt.gnu, tt.binary, got, tt.out)
+		}
 	}
 }
